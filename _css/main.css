@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+html {
+    font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+    font-size: var(--normal);
+    color: var(--text-color);
+  
+    width: 100%;
+    background: url("../assets/bg.png") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.btn, .btn1, .btn2, .btn3{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover, .btn1:hover, .btn2:hover, .btn3:hover {
+    color: rgb(128, 37, 141);
+    background-color:#fbfcfd;
+}
+
+.name { 
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: calc(0.5*(100vw - 60px));
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.name h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    margin: 10px;
+}
+
+.name small{
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.content { 
+    color: #fbfcfd;
+    position: relative;
+
+    width: calc(0.9*(100vw - 60px) - 40px);
+    margin-top: 50px;
+    margin-left: calc(0.05*(100vw - 60px));
+    margin-right: calc(0.05*(100vw - 60px));
+    padding: 20px;
+    border: 1px solid #fbfcfd;
+    border-radius: 15px; 
+    background-color:rgba(129, 80, 175, 0.3);
+    
+
+    max-height: 75%;
+    overflow-y: scroll;
+}
+
+.content h2 {
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.content a {
+    color: #7fcaf5;
+}
+
+.content hr {
+    height: 1px;
+    color: rgba(251, 252, 253, 0.7);
+    background-color: rgba(251, 252, 253, 0.7);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .name { 
+        left: 50%;
+    }
+
+    .name h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .btn, .btn1, .btn2, .btn3{
+        padding: 8px 10px;
+        border-radius: 20px;
+    }
+    
+    .content { 
+        width: calc(90vw - 40px);
+        margin-left: 5vw;
+        margin-right: 5vw;
+        max-height: 60%;
+    }
+}
+
+
+#about .btn1{
+    color:#6b059f;
+    background-color:#fbfcfd;
+}
+
+#projects .btn2 {
+    color:#6b059f;
+    background-color:#fbfcfd;
+}
+
+#blog .btn3 {
+    color:#6b059f;
+    background-color:#fbfcfd;
+}

@@ -1,0 +1,136 @@
+/* ==================================================================
+    Header and Nav
+================================================================== */
+* {
+  margin: 0; 
+}
+
+nav {
+  height: 15%;
+  width: calc(0.85*(100vw - 60px));
+  margin: auto;
+  margin-left: calc(0.075*(100vw - 60px));
+  margin-right: calc(0.075*(100vw - 60px));
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+
+.btn1, .btn2, .btn3 {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #fbfcfd;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  
+  /* padding-top: 7px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 7px; */
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover {
+  color: rgb(128, 37, 141);
+  background-color:#fbfcfd;
+}
+
+
+header {
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+header .blog-name {
+  width: 35%;
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+  font-family: "Lucida Console", Monaco, monospace;
+  padding-top: 10px;
+}
+
+header .blog-name a {
+  color: #a6a2a0;
+  text-decoration: none;
+}
+
+
+#menu-icon {
+  display: none;
+}
+
+
+
+/*
+narrow display: collapse the header (don't show the menu items)
+instead, display a burger menu.
+*/
+@media (max-width: 600px) {
+  nav {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+  }
+
+  nav li {
+    padding: 0px 2vw;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+}
+
+table {
+  line-height: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+tr:first-of-type {
+  background: #eae9f4;
+}
+
+tr:first-of-type > th {
+  text-align: center;
+}
+
+tr,
+th,
+td {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+table tbody tr td {
+  border: 1px solid lightgray;
+}
+
+#blog .btn3 {
+  color:#6b059f;
+  background-color:#fbfcfd;
+}
