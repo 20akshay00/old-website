@@ -127,10 +127,11 @@ On narrow device, reduce margins. */
   }
 
   .page-foot {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     padding-bottom: 1em;
+    margin-top: 3em;
   }
 }
 
