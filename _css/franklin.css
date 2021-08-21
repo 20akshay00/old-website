@@ -76,7 +76,7 @@ html {
   font-family: Arial, serif;
   color: #c8ced4;
   text-align: center;
-  margin-top: 6em;
+  margin-top: 5em;
   border-top: 2px solid lightgrey;
   padding: 1em;
   padding-bottom: 0;
@@ -121,9 +121,16 @@ On narrow device, reduce margins. */
   .franklin-content { 
     width: calc(90vw - 40px);
     margin: auto;
-    min-height: 80vh;
+    min-height: 70vh;
     margin-top: 50px;
     margin-bottom: 30px;
+  }
+
+  .page-foot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 1em;
   }
 }
 
