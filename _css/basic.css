@@ -86,7 +86,7 @@ header .blog-name a {
 narrow display: collapse the header (don't show the menu items)
 instead, display a burger menu.
 */
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   nav {
     width: 85%;
     height: 15%;

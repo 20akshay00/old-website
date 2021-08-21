@@ -14,10 +14,10 @@ html {
     font-size: var(--normal);
     color: var(--text-color);
   
+    min-height: 100%;
     width: 100%;
     background: url("../assets/bg.png") no-repeat center center fixed;
     background-size: cover;
-    overflow: hidden;
 }
 
 .btn, .btn1, .btn2, .btn3{
@@ -43,7 +43,7 @@ html {
     position: absolute;
     top: 50%;
     left: calc(0.5*(100vw - 60px));
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
 }
@@ -51,6 +51,7 @@ html {
 .name h1{
     font-family: "Montserrat", sans-serif;
     font-size: 80px;
+    line-height: 80px;
     margin: 10px;
 }
 
@@ -72,10 +73,8 @@ html {
     border: 1px solid #fbfcfd;
     border-radius: 15px; 
     background-color:rgba(129, 80, 175, 0.3);
-    
 
-    max-height: 75%;
-    overflow-y: scroll;
+    margin-bottom: 30px;
 }
 
 .content h2 {
@@ -95,15 +94,15 @@ html {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 620px)
 {
     .name { 
         left: 50%;
     }
 
     .name h1{
-        font-size: 60px;
-        line-height: 60px;
+        font-size: clamp(60px, 0.077*100vw + 32.3px, 80px);
+        line-height: clamp(60px, 0.077*100vw + 32.3px, 80px);
     }
 
     .btn, .btn1, .btn2, .btn3{
@@ -113,9 +112,9 @@ html {
     
     .content { 
         width: calc(90vw - 40px);
-        margin-left: 5vw;
-        margin-right: 5vw;
-        max-height: 60%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
 

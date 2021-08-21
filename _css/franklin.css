@@ -30,8 +30,6 @@ html {
   width: 100%;
   background: url("../assets/bg.png") no-repeat center center fixed;
   background-size: cover;
-  overflow: scroll;
-  overflow-x: hidden;
 }
 
 /* ==================================================================
@@ -119,11 +117,13 @@ html {
 }
 
 On narrow device, reduce margins. */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .franklin-content { 
     width: calc(90vw - 40px);
     margin: auto;
     max-height: 60%;
+    margin-top: 50px;
+    margin-bottom: 70px;
   }
 }
 

@@ -20,6 +20,6 @@ end
 function hfun_listposts()
     posts = readdir("./blog/posts/") |> reverse .|> splitext .|> x->first(x)
     return join(map(filter(i -> i!="index", posts)) do filename
-        "- $(filename) - [$(pagevar("./blog/posts/$(filename)", "post_title"))]($(filename))"
+        "- $(filename) - [$(pagevar("./blog/posts/$(filename)", "post_title"))](/blog/posts/$(filename))"
     end, "\n") |> Markdown.parse |> html
 end
