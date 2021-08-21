@@ -67,24 +67,19 @@ html {
 
 .franklin-content .page-foot a {
   text-decoration: none;
-  color: #ebb6e3;
+  color: #a6a2a0;
   text-decoration: underline;
 }
 
 .page-foot {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   font-size: 80%;
   font-family: Arial, serif;
   color: #c8ced4;
   text-align: center;
   margin-top: 6em;
   border-top: 2px solid lightgrey;
-  padding: 1em 1em 1em 1em;
-  border-radius: 0 0 15px 15px;
-
-  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  padding-bottom: 0;
 }
 
 /* ==================================================================
