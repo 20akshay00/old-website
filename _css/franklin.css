@@ -67,19 +67,24 @@ html {
 
 .franklin-content .page-foot a {
   text-decoration: none;
-  color: #a6a2a0;
+  color: #ebb6e3;
   text-decoration: underline;
 }
 
 .page-foot {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   font-size: 80%;
   font-family: Arial, serif;
   color: #c8ced4;
   text-align: center;
   margin-top: 6em;
-  border-top: 1px solid lightgrey;
-  padding-top: 2em;
-  margin-bottom: 1em;
+  border-top: 2px solid lightgrey;
+  padding: 1em 1em 1em 1em;
+  border-radius: 0 0 15px 15px;
+
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* ==================================================================
@@ -121,9 +126,9 @@ On narrow device, reduce margins. */
   .franklin-content { 
     width: calc(90vw - 40px);
     margin: auto;
-    max-height: 60%;
+    min-height: 80vh;
     margin-top: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
 }
 
